@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+<body>
+  <%- include('./partials/header.ejs') %>
+  <style>
+    body {
+      background-image: url('../../images/kanchanara-5ixVD22x22o-unsplash.jpg');
+      background-blend-mode: soft-light;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: var(--pry-background-color);
+    }
+  
+    .card_container {
+      display: none;
+    }
+  </style>
+  <main>
+    <article>
+      <h2>Converts well, receive more</h2>
+      <p>All digital and safe. Transactions made easy, Your trusted brand for your crypto.</p>
+    </article>
+    <section>
+      <form action="/buy" method="post">
+        <label for="buy-crypto" class="buy-crypto"><h2>Enter Amount to buy in USD</h5></label>
+        <input type="number" name="buy-crypto" id="buy-crypto">
+        <button type="submit">Buy</button>
+      </form>
+    </section>
+  </main>
+  <%- include('./partials/footer.ejs') %>
+</body>
+</html>

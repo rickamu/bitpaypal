@@ -1,0 +1,152 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&display=swap');
+
+:root {
+  --pry-color: rgba(250, 250, 250, 0.8);
+  --sec-color: rgba(20, 20, 20, 0.8);
+  --pry-background-color: rgba(20, 20, 20, 0.9);
+  --pry-btn-color: rgba(20, 20, 200, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--pry-color);
+  font-family: 'Nunito', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--pry-background-color);
+  ::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+  }
+}
+header,footer {
+  height: 75px;
+  /* background-color: var(--pry-background-color); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* nav {
+  width: 40%;
+} */
+
+.logo {
+  border-radius: 30px;
+}
+
+ul li {
+  display: inline-block;
+  /* width: 20%; */
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  size: 30px;
+}
+
+a:hover {
+  color: rgba(255,255,255,1);
+}
+
+i {
+  font-size: 30px;
+}
+
+main {
+  max-width: 1080px;
+  min-height: calc(100% - 200px);
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+main > * {
+  max-width: 400px;
+}
+
+form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+form > * {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-width: 200px;
+  min-height: 30px;
+}
+input, button {
+  height: 38px;
+}
+input {
+  color: var(--sec-color);
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+input:active {
+  box-shadow: inset 2px 2px rgba(255, 255, 255, 0.281);
+  border: none;
+}
+button {
+  background-color: var(--pry-btn-color);
+  border-radius: 5px;
+  box-shadow: none;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+button:hover {
+  background-color: darkslategrey;
+  color: var(--pry-btn-color);
+}
+
+.finish-order *{
+  min-width: 300px;
+  width: 400px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.card_container {
+  display: none;
+}
+
+footer {
+  height: 100px;
+  margin: auto 0 0 0;
+}
+.fa-paypal {
+  color: rgb(52, 161, 250);
+}
+.fa-cc-stripe {
+  color: blue;
+}
+.fa-credit-card-alt {
+  color: rgb(14, 14, 14);
+}
